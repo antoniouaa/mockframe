@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mockframe"
+version = "0.1.0"
+description = "Mock pandas DataFrames with ease"
+authors = ["antoniouaa <antoniouaa@hotmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.2"
+Faker = "^13.12.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+taskipy = "^1.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
