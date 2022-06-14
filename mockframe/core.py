@@ -20,7 +20,7 @@ def mock_column(t: T, length: int) -> tuple[list[T], T]:
         return []
 
     try:
-        col = list(fake.pylist(length, False, t))
+        col = list(fake.pylist(length, False, [t]))
     except AttributeError:
         col = [t() for _ in range(length)]
 
