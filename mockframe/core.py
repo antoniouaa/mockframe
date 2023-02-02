@@ -15,7 +15,7 @@ def MockFrame(shape: Shape, rows: int = 100) -> pandas.DataFrame:
     return df.convert_dtypes()
 
 
-def mock_column(t: T, length: int) -> tuple[list[T], T]:
+def mock_column(t: T, length: int) -> list[T]:
     if length <= 0:
         return []
 
